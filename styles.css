@@ -1,0 +1,274 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e9e9e9;
+}
+
+header {
+    background-color: white;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.dots {
+    display: none;
+}
+
+.logo-box {
+    display: flex;
+    height: 70px;
+}
+
+.logo-box div {
+    margin-left: 15px;
+}
+
+.logo-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #846219;
+    margin: 0;
+    line-height: 48px;
+}
+
+.logo-text {
+    font-size: 16px;
+    color: #846219;
+    margin: 0;
+    line-height: 18px;
+}
+
+nav {
+    color: #846219;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.measuring {
+    display: flex;
+    height: 1024px;
+    align-items: center;
+    justify-content: center;
+}
+
+.measuring h2 {
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 95px;
+    width: 350px;
+    color: #716565;
+}
+
+.leader {
+    background-color: #506FA9;
+    display: flex;
+    height: 1024px;
+    align-items: center;
+}
+
+.leader h3 {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 80px;
+    margin: 0;
+    color: white;
+}
+
+.leader p {
+    margin: 0;
+    margin-top: 26px;
+    font-size: 48px;
+    line-height: 56px;
+    color: white;
+    font-weight: 300;
+}
+
+.leader img {
+    position: absolute;
+    right: 0;
+    height: 800px;
+    margin-top: -80px;
+    background: url(Image.png);
+    mix-blend-mode: multiply;
+}
+
+.text-leader {
+    width: 500px;
+    margin-left: 15%;
+    margin-top: 250px;
+    position: relative;
+}
+
+footer {
+    height: 250px;
+    left: 0;
+    display: flex;
+    padding-top: 20px;
+}
+
+.follow {
+    margin-left: 150px;
+}
+
+.follow h5 {
+    font-size: 28px;
+    line-height: 32px;
+    color: #716565;
+    margin: 0;
+    margin-top: 42px;
+}
+
+.follow div {
+    height: 45px;
+    width: 170px;
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    margin-left: 260px;
+}
+
+.contact h5 {
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #716565;
+    margin: 0;
+    margin-top: 42px;
+}
+
+.contact p {
+    width: 121px;
+    height: 57px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #716565;
+}
+
+@media (max-width: 1060px) {
+    .measuring {
+        display: flex;
+        height: 1024px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .leader {
+        background-color: #506FA9;
+        display: flex;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .leader img {
+        right: 0;
+        background: url(Image.png);
+        mix-blend-mode: multiply;
+        position: relative;
+        width: 100%;
+    }
+    .text-leader {
+        width: 500px;
+        margin-left: 15%;
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 750px) {
+    header div {
+        display: none;
+    }
+    header nav {
+        display: none;
+    }
+    
+    .dots {
+        display: inline-block;
+        height: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .logo-box {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin: auto;
+        width: 40px;
+        height: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .follow {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact p {
+        text-align: center;
+    }
+
+    .measuring h2 {
+        font-weight: 700;
+        font-size: 53px;
+        line-height: 62px;
+        width: 226;
+        color: #716565;
+    }
+
+    .measuring img {
+        width: 350px;
+    }
+
+    .leader h3 {
+        font-weight: 700;
+        font-size: 41px;
+        line-height: 48px;
+        margin: 0;
+        color: white;
+    }
+    
+    .leader p {
+        margin: 0;
+        margin-top: 26px;
+        font-size: 26px;
+        line-height: 31px;
+        color: white;
+        font-weight: 300;
+    }
+
+    .text-leader {
+        width: 288px;
+        margin-left: 15%;
+        margin-top: 250px;
+    }
+
+}
